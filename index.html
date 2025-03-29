@@ -1,193 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Stylesheets and scripts -->
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script type = "text/javascript" src="main.js"></script>
+<!-- Favicon -->
+<link rel="icon" href="images/logo.jpeg" type="image/jpeg">
 </head>
+<title>Yehoram Gaon</title>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <!-- Navigation Menu -->
+  <nav id="menu">
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR Code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
 
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <br/>
+    <br/>
+    <h1 class="section-title">About Me</h1>
+  
+    <div class="about-me-text">
+  <p>יהורם גאון הוא זמר, שחקן ואיש ציבור ישראלי, שנחשב לאחד מעמודי התווך של התרבות הישראלית</p>
+  <p>הוא נולד בירושלים בשנת 1939 למשפחה ירושלמית ותיקה, וצמח להיות אחד היוצרים המשפיעים והאהובים בישראל</p>
+  <p>במהלך הקריירה הארוכה שלו, יהורם כיכב בסרטים איקוניים כמו "קזבלן" ו"מבצע יונתן", והקליט עשרות להיטים בלתי נשכחים כמו "הנני כאן", "עוד לא אהבתי די" ו"רוזה"</p>
+  <p>לצד פעילותו האמנותית, גאון פעל גם במישור הציבורי, כיהן כחבר מועצת עיריית ירושלים ופועל עד היום למען שימור מורשת התרבות היהודית-ספרדית</p>
+  <p>את השראתו הוא קיבל מדמויות משפיעות רבות, ובראשן אביו, משה דוד גאון, שהיה איש חינוך וסופר, ונטע בו את האהבה העמוקה לתרבות ולמסורת ישראל</p>
+    </div>
+  
+  </section>
+
+<!-- Photo Gallery Section -->
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <h1 class="section-title">My Photos</h1>
+  <div class="photo-gallery">
+    <img src="images/1.jpeg" alt="Photo 1">
+    <img src="images/2.jpeg" alt="Photo 2">
+    <img src="images/3.jpeg" alt="Photo 3">
+    <img src="images/4.jpeg" alt="Photo 4">
+    <img src="images/5.jpeg" alt="Photo 5">
+    <img src="images/6.jpeg" alt="Photo 6">
+    <img src="images/7.jpeg" alt="Photo 7">
+  </div>
 </section>
 
+<!-- YouTube Playlist Section -->
 <section id="playlist" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+  <h1 class="section-title">My Playlist</h1>
+  <div class="favorite-playlist">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/c_I8oS4Iv1A?si=ujgkl6msZxpBYD9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
 </section>
 
+<!-- Like Button Section -->
 <section id="like" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+<h1 class="section-title">Like</h1>
+  <div class="like-container">
+    <button id="likeButton" onclick="incrementLikes()" class="like-button">
+      <span class="like-icon">👍🏼</span>
+      <span id="likes-count">0</span>
+      <span class="like-text">Likes</span>
+    </button>
+    <div class="like-count" id="likeCount">If you love Yehoram add a like</div>
+  </div>
+
 </section>
 
+<!-- QR Code Section -->
 <section id="qrcoder" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+<h1 class="section-title">QR</h1>
+<div class="qr-code-container">
+  <p>Scan the QR code to visit Yehoram page</p>
+  <img src="images/qr-code.png" alt="QR Code" class="qr-code">
+</div>
 </section>
 
+<!-- Q&A Section -->
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <h1 class="section-title">Q&A</h1>
+  
+  <div class="qa-container">
+    <div class="qa-question">
+      שאלה 1: שלושה הבדלים עיקריים בין שלושת הדורות של האינטרנט (1, 2, 3) 
+    </div>
+    
+    <div class="qa-answer">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Web 1.0</th>
+            <th>Web 2.0</th>
+            <th>Web 3.0</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>סוג תוכן</strong></td>
+            <td>קריאה בלבד (Read-only)</td>
+            <td>קריאה וכתיבה (Read-write), תוכן אינטראקטיבי ודינמי</td>
+            <td>תוכן מותאם אישית, סמנטי ואינטליגנטי (Semantic web)</td>
+          </tr>
+          <tr>
+            <td><strong>אינטראקציה עם משתמש</strong></td>
+            <td>חד-כיוונית: המשתמש קורא תוכן בלבד, ללא אפשרות תגובה או יצירה.</td>
+            <td>דו-כיוונית: המשתמשים יכולים ליצור תוכן, להגיב, ולשתף (רשתות חברתיות, בלוגים).</td>
+            <td>אינטראקציה חכמה ומותאמת אישית, שילוב AI והבנת הקשר תוכן (Context-aware interaction).</td>
+          </tr>
+          <tr>
+            <td><strong>טכנולוגיות מרכזיות</strong></td>
+            <td>HTML בסיסי, דפים סטטיים</td>
+            <td>AJAX, Javascript, APIs, רשתות חברתיות</td>
+            <td>טכנולוגיות מבוזרות (Blockchain), למידת מכונה ובינה מלאכותית (AI)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="qa-question">
+      שאלה 2: דוגמת תרחיש שימוש ("תופעות לוואי של תרופות")
+    </div>
+    
+    <div class="qa-answer">
+      <div class="use-case">
+        <h4>Web 1.0 (סטטי)</h4>
+        <p>המשתמש מחפש "תופעות לוואי של תרופות" ומקבל דף HTML סטטי עם רשימה כללית של תרופות ותופעות לוואי. אין אפשרות אינטראקציה, סינון, או קבלת מידע מותאם אישית.</p>
+      </div>
+      
+      <div class="use-case">
+        <h4>Web 2.0 (אינטראקטיבי ושיתופי)</h4>
+        <p>המשתמש מקבל דפים אינטראקטיביים, כגון פורומים וקהילות (כמו Reddit), בהם משתמשים משתפים מידע אישי על תופעות לוואי. המשתמש יכול לשאול שאלות, לקבל תשובות ממשתמשים אחרים, או לכתוב ביקורות ותגובות.</p>
+      </div>
+      
+      <div class="use-case">
+        <h4>Web 3.0 (סמנטי וחכם)</h4>
+        <p>המערכת מזהה את התרופה הספציפית של המשתמש ומציגה לו מידע מותאם אישית מבוסס על ההיסטוריה הרפואית שלו, נתוני שימוש, ותגובות של אנשים עם פרופילים דומים. המידע מוצג בצורה אינטליגנטית, כולל המלצות מותאמות אישית, ניתוח סיכונים חכם, ואזהרות אוטומטיות על סמך נתונים שנאספו ונותחו באמצעות AI.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Contact Form Section -->
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <h1 class="section-title">Contact Me</h1>
+  <div class="contact-container">
+    <!-- Formspree integration for serverless form handling -->
+    <form class="contact-form" id="emailForm" action="https://formspree.io/f/mblgayan" method="POST">
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="your@email.com">
+      </div>
+      
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required placeholder="Message subject">
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="emoji">Add Emoji (Optional):</label>
+        <select id="emoji" name="emoji" onchange="updateEmojiPreview()">
+          <option value="😊">😊</option>
+          <option value="😁">😁</option>
+          <option value="😍">😍</option>
+          <option value="👍">👍</option>
+          <option value="🎵">🎵</option>
+          <option value="🎸">🎸</option>
+          <option value="🎤">🎤</option>
+          <option value="👏">👏</option>
+          <option value="❤️">❤️</option>
+          <option value="✨">✨</option>
+          <option value="😕">😕</option>
+          <option value="😞">😞</option>
+          <option value="😠">😠</option>
+          <option value="👎">👎</option>
+          <option value="🤔">🤔</option>
+          <option value="😴">😴</option>
+          <option value="🙄">🙄</option>
+          <option value="💔">💔</option>
+          <option value="⚠️">⚠️</option>
+          <option value="🤷">🤷</option>
+        </select>
+        <div style="margin-top: 10px;">
+          Selected emoji: <span id="emojiPreview" class="emoji-preview"></span>
+        </div>
+      </div>
+      
+      <!-- Hidden field for storing the full message with emoji -->
+      <input type="hidden" name="full_message" id="fullMessageField">
+      
+      <!-- Hidden field for redirect after submission -->
+      <input type="hidden" name="_next" value="https://wed-2023.github.io/316127653/thank-you.html">
+      
+      <button type="submit" class="submit-button">שלח</button>
+    </form>
+    
+    <!-- Loading message shown while form is submitting -->
+    <div id="loadingMessage" style="display: none; text-align: center; margin-top: 20px;">
+      <div style="padding: 15px; border-radius: 5px;">
+        <p>שולח את ההודעה...</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
 </body>
 </html>
